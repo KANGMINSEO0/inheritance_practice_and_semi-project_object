@@ -50,16 +50,43 @@ public class Elevator {
     public void startMovement(int userLayer) {
         this.layer = (int) (Math.random() * 20 + 1); // 1~20층 있다
         if (this.layer > userLayer) {
+<<<<<<< HEAD
             System.out.println("엘리베이터가 " + this.layer + "층에 있습니다. 엘리베이터가 아래로 내려갑니다.");
         } else if (this.layer < userLayer) {
             System.out.println("엘리베이터가 " + this.layer + "층에 있습니다. 엘리베이터가 위로 올라갑니다.");
+=======
+            try {
+                System.out.println("엘리베이터가 " + this.layer + "층에 있습니다. 엘리베이터가 아래로 내려갑니다.");
+                Thread.sleep(2000);
+                System.out.println("엘리베이터가 도착했습니다.");
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        } else if (this.layer < userLayer) {
+            try {
+                System.out.println("엘리베이터가 " + this.layer + "층에 있습니다. 엘리베이터가 위로 올라갑니다.");
+                Thread.sleep(2000);
+                System.out.println("엘리베이터가 도착했습니다.");
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+>>>>>>> c83fe98 (elevater commit)
         } else {
             System.out.println("엘리베이터가 현재 층에 있습니다.");
         }
     }
     public void movement(int moveLayer) {
         doorClose();
+<<<<<<< HEAD
         System.out.println("엘리베이터가 " + moveLayer + "층으로 이동합니다.");
+=======
+        try {
+            System.out.println("엘리베이터가 " + moveLayer + "층으로 이동합니다.");
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+>>>>>>> c83fe98 (elevater commit)
     }
 
     public void doorOpen() {
@@ -80,7 +107,17 @@ public class Elevator {
 //            this.isOpen = false;
 //            System.out.println("문이 닫힙니다.");
 //        }
+<<<<<<< HEAD
         System.out.println("문이 닫힙니다.");
+=======
+        try {
+            Thread.sleep(100);
+            System.out.println("문이 닫힙니다.");
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+>>>>>>> c83fe98 (elevater commit)
     }
 
     public void arriveLayer(int moveLayerN) {
@@ -91,6 +128,10 @@ public class Elevator {
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
+<<<<<<< HEAD
         doorOpen();
+=======
+//        doorOpen();
+>>>>>>> c83fe98 (elevater commit)
     }
 }
