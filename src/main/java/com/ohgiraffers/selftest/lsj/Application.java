@@ -14,7 +14,7 @@ public class Application {
 //        fid.input();
 
         MyFriendInfo fi1 = new MyFriendInfo("이순신", 100);
-        MyFriendInfo fid1 = new MyFriendDetailInfo("성균관", "000-1234-5678");
+        MyFriendInfo fid1 = new MyFriendDetailInfo("이순신", 100, "성균관", "000-1234-5678");
 //        fi1.output();
         fid1.output();
 

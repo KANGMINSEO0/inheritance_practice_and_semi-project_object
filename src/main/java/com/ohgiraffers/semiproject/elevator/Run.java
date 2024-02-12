@@ -10,7 +10,7 @@ public class Run {
 
         Scanner sc = new Scanner(System.in);
 
-<<<<<<< HEAD
+
         System.out.print("현재 층수를 입력하세요 : ");
         int userLayerN = sc.nextInt();
         user.inputLayer(userLayerN);
@@ -21,7 +21,7 @@ public class Run {
         user.arrive(moveLayerN);
 
 
-=======
+
 //        System.out.print("현재 층수를 입력하세요 : ");
 //        int userLayerN = sc.nextInt();
 //        user.inputLayer(userLayerN);  // 현재 층수와 엘리베이터가 있는 층수를 비교하여 사용자가 있는 층으로 이동
@@ -33,7 +33,7 @@ public class Run {
 
         while(true) {
             System.out.print("현재 층수를 입력하세요 : ");
-            int userLayerN = sc.nextInt();
+//            int userLayerN = sc.nextInt();
             if (userLayerN > 0 && userLayerN <= 20) {
                 user.inputLayer(userLayerN);
                 System.out.println("엘리베이터의 문을 여시겠습니까? ");
@@ -46,10 +46,10 @@ public class Run {
                     default: System.out.println("엘리베이터 이용을 종료합니다."); break;
                 }
                 System.out.print("이동하고 싶은 층수를 입력하세요 : ");
-                int moveLayerN = sc.nextInt();
-                user.moveLayer(moveLayerN);
-                user.arrive(moveLayerN);
-                user.inputOpen();
+//                int moveLayerN = sc.nextInt();
+//                user.moveLayer(moveLayerN);
+//                user.arrive(moveLayerN);
+//                user.inputOpen();
                 break;
 
             } else {
@@ -57,7 +57,7 @@ public class Run {
             }
 
         }
->>>>>>> c83fe98 (elevater commit)
+
 
     }
 }

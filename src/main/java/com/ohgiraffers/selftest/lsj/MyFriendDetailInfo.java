@@ -53,6 +53,7 @@ public class MyFriendDetailInfo extends MyFriendInfo {
     }
 
 
+    @Override
     public void output() {
         super.output();
         System.out.println("주소 : " + this.address);
